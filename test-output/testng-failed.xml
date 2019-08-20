@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="port" value="4444"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="hostToRun" value="localhost"/>
+  <listeners>
+    <listener class-name="seleniumGrid.SeleniumGridListener"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
       <class name="case_study.TestSearchFeature">
         <methods>
-          <include name="validateProductsSearch"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="getResult"/>
+          <include name="validateProductsSearch" invocation-numbers="2"/>
         </methods>
       </class> <!-- case_study.TestSearchFeature -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

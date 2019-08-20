@@ -3,6 +3,11 @@ package pageElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebElement;
 
+/**
+ * Label class
+ * @author ferahmed
+ *
+ */
 public class Label extends AbstractElement{
 
 	public Label(By locator) {

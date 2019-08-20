@@ -4,6 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * Select class
+ * @author ferahmed
+ *
+ */
 public class SelectList extends AbstractElement{
 	
 	public SelectList(By locator) {

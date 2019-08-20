@@ -6,7 +6,12 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 import webDriver.WebDriverInstance;
 
-
+/**
+ * web element class
+ * functionality related to each web element will be defined here
+ * @author ferahmed
+ *
+ */
 public class AbstractElement {
 	
 	private By locator;
@@ -16,8 +21,7 @@ public class AbstractElement {
 	}
 
 	/**
-     * Instance method used to call static class method locateElement.
-     * 
+     * this method will locate the element on web page
      * @return the web element found by locator
      */
     public RemoteWebElement getElement() {

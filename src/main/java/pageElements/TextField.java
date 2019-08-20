@@ -3,6 +3,11 @@ package pageElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebElement;
 
+/**
+ * TextField class
+ * @author ferahmed
+ *
+ */
 public class TextField extends AbstractElement{
 	
 	/**

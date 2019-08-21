@@ -27,7 +27,7 @@ In order to utilise this project you need to have the following installed locall
 Usage
 This a Maven project.
 To run all modules, navigate to case_study directory and run:
-mvn clean install
+mvn clean install -U
 mvn clean test -DsuiteXmlFile=testng.xml
 
 Reporting
